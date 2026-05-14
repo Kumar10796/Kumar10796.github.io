@@ -36,6 +36,7 @@ export function Hero() {
           <span className="text-gradient">Sri</span>{" "}
           <span className="text-gradient italic">Kumaran</span>
           <span className="text-muted-foreground/50">.</span>
+          <span className="text-gradient">V</span>
         </motion.h1>
 
         <motion.div

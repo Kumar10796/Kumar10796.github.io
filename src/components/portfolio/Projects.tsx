@@ -6,9 +6,13 @@ const projects = [
   {
     n: "001",
     title: "Aukura Search",
-    description:
-      "Event-driven file ingestion pipeline processing millions of documents through S3, SQS, and Lambda — metadata persisted to DynamoDB.",
-    stack: ["Spring Boot", "AWS S3", "SQS", "DynamoDB", "Lambda"],
+    points: [
+      "Developed an event-driven document processing system using Spring Boot, AWS S3, SQS, Lambda, DynamoDB, and OpenSearch.",
+      "Implemented asynchronous file ingestion pipelines for scalable document upload, metadata storage, and search indexing.",
+      "Built REST APIs for file management, processing status tracking, and OpenSearch-based document retrieval.",
+      "Collaborated with cross-functional teams on cloud deployment, debugging, and backend performance optimization.",
+    ],
+    stack: ["Spring Boot", "AWS S3", "SQS", "DynamoDB", "Lambda", "OpenSearch"],
     year: "2025-2026",
   },
   {
