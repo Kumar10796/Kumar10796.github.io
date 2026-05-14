@@ -8,11 +8,11 @@ const groups = [
   },
   {
     title: "Cloud & DevOps",
-    skills: ["AWS", "Docker", "Kubernetes", "CI / CD", "Jenkins", "GitHub Actions"],
+    skills: ["AWS", "CI / CD", "Jenkins", "GitHub Actions"],
   },
   {
     title: "Database",
-    skills: ["MySQL", "PostgreSQL", "DynamoDB", "MongoDB"],
+    skills: ["MySQL", "PostgreSQL", "DynamoDB"],
   },
   {
     title: "Frontend",

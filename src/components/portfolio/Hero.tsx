@@ -60,18 +60,14 @@ export function Hero() {
             </div>
             <div>
               <span className="text-foreground/40">Email / </span>
-              <a href="mailto:srikumaran@gmail.com" className="hover:text-foreground transition-colors normal-case tracking-normal">srikumaran@gmail.com</a>
+              <a href="mailto:srikumaran107@gmail.com" className="hover:text-foreground transition-colors normal-case tracking-normal">srikumaran107@gmail.com</a>
             </div>
             <div>
               <span className="text-foreground/40">Phone / </span>
-              <a href="tel:+919999999999" className="hover:text-foreground transition-colors">+91 99999 99999</a>
+              <a href="tel:+919942593636" className="hover:text-foreground transition-colors">+91 99425 93636</a>
             </div>
           </div>
         </motion.div>
-      </div>
-
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground/60">
-        Scroll ↓
       </div>
     </section>
   );

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Section } from "./Section";
 
 const stats = [
-  { value: "5+", label: "Years" },
-  { value: "20+", label: "Projects" },
+  { value: "4+", label: "Years" },
+  { value: "3", label: "Projects" },
   { value: "10+", label: "AWS Services" },
 ];
 

@@ -33,15 +33,10 @@ export function Footer() {
               Reach me
             </p>
             <p className="text-base">
-              <a href="mailto:srikumaran@gmail.com" className="hover:text-foreground/80 transition-colors block">srikumaran@gmail.com</a>
-              <a href="tel:+919999999999" className="hover:text-foreground/80 transition-colors block mt-1 font-mono text-sm">+91 99999 99999</a>
+              <a href="mailto:srikumaran107@gmail.com" className="hover:text-foreground/80 transition-colors block">srikumaran107@gmail.com</a>
+              <a href="tel:+919942593636" className="hover:text-foreground/80 transition-colors block mt-1 font-mono text-sm">+91 99425 93636</a>
             </p>
           </div>
-        </div>
-
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-          <p>© {new Date().getFullYear()} Sri Kumaran V</p>
-          <p>Crafted with care · v1.0</p>
         </div>
       </div>
     </footer>
