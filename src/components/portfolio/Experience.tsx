@@ -3,33 +3,27 @@ import { Section } from "./Section";
 
 const experience = [
   {
-    company: "Tech Solutions Pvt Ltd",
-    role: "Senior Java Developer",
-    duration: "2023 — Present",
-    points: [
-      "Led migration of monolith to microservices on AWS, cutting deploy time 70%.",
-      "Architected event-driven file processing pipeline (S3, SQS, DynamoDB) handling 5M+ events/day.",
-      "Mentored a team of 4 engineers, established code review and CI/CD standards.",
-    ],
-  },
-  {
-    company: "CloudWorks Systems",
-    role: "Java Backend Developer",
-    duration: "2021 — 2023",
-    points: [
-      "Built secure REST APIs with Spring Boot & Spring Security for fintech clients.",
-      "Designed PostgreSQL schemas and JPA layers for high-throughput transaction systems.",
-      "Containerized services with Docker and orchestrated on EKS.",
-    ],
-  },
-  {
-    company: "Infomatrix Labs",
+    company: "Yectra Technologies",
     role: "Software Engineer",
-    duration: "2019 — 2021",
+    duration: "2022 — Present",
     points: [
-      "Developed core modules of an enterprise document management platform.",
-      "Integrated AWS S3, Lambda, and CloudFront for global document delivery.",
-      "Reduced page load times by 45% with backend caching strategies.",
+      "Developed scalable backend applications using Java, Spring Boot, and Microservices architecture.",
+      "Built secure REST APIs and integrated AWS services such as S3, SQS, and DynamoDB.",
+      "Designed and optimized PostgreSQL database schemas for enterprise applications.",
+      "Worked on event-driven file processing systems and cloud-based application deployments.",
+      "Collaborated with cross-functional teams to implement new features, bug fixes, and performance improvements.",
+    ],
+  },
+  {
+    company: "Spiro Prime Tech Solutions",
+    role: "Java Backend Developer",
+    duration: "2020 — 2022",
+    points: [
+      "Developed and maintained web applications using Java, Spring Boot, and REST APIs.",
+      "Built backend modules for student project management and training platforms.",
+      "Designed and integrated PostgreSQL databases for handling project and user data.",
+      "Collaborated with teams to deliver scalable and reliable educational web solutions.",
+      "Worked on deployment, bug fixing, and performance optimization of applications.",
     ],
   },
 ];

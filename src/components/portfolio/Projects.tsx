@@ -5,35 +5,26 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     n: "001",
-    title: "File Processing System",
+    title: "Aukura Search",
     description:
       "Event-driven file ingestion pipeline processing millions of documents through S3, SQS, and Lambda — metadata persisted to DynamoDB.",
     stack: ["Spring Boot", "AWS S3", "SQS", "DynamoDB", "Lambda"],
-    year: "2024",
+    year: "2025-2026",
   },
   {
     n: "002",
-    title: "E-commerce Microservices",
-    description:
-      "Distributed commerce platform with independent services for catalog, cart, orders, and payments — orchestrated on Kubernetes.",
-    stack: ["Spring Cloud", "Kafka", "PostgreSQL", "Kubernetes", "Redis"],
-    year: "2023",
-  },
-  {
-    n: "003",
-    title: "Document Management",
-    description:
-      "Secure cloud-native document vault with versioning, role-based access, and global CDN delivery via CloudFront.",
-    stack: ["Spring Boot", "AWS S3", "CloudFront", "Cognito", "MongoDB"],
-    year: "2023",
-  },
-  {
-    n: "004",
-    title: "Real-time Notifications",
-    description:
-      "Low-latency notification fan-out system supporting WebSocket, push, and email channels with at-least-once delivery.",
-    stack: ["Spring WebFlux", "Kafka", "Redis", "WebSocket", "AWS SNS"],
-    year: "2022",
+    title: "Envestnet Financial Platform",
+    points: [
+      "Developed and maintained enterprise-level financial service applications using Core Java and Spring Framework.",
+      "Implemented backend business logic and RESTful APIs for secure financial operations and transaction workflows.",
+      "Designed and managed MySQL database operations, queries, and integrations for efficient data handling.",
+      "Worked closely with cross-functional teams to deliver scalable and reliable business solutions.",
+      "Participated in debugging, performance optimization, and production issue resolution.",
+      "Developed reusable backend modules and improved existing services for better maintainability.",
+      "Collaborated in Agile development cycles, code reviews, testing, and deployment activities.",
+    ], 
+    stack: ["Core Java", "Spring", "MySQL", "REST APIs", "Hibernate"],
+    year: "2023-2024",
   },
 ];
 
@@ -48,8 +39,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: i * 0.06 }}
-            className="group py-10 px-2 grid md:grid-cols-12 gap-6 hover:bg-white/[0.02] transition-colors cursor-pointer"
-          >
+            className="group py-10 px-2 grid md:grid-cols-12 gap-6 hover:bg-white/[0.02] transition-colors cursor-pointer">
             <div className="md:col-span-1 font-mono text-xs text-muted-foreground pt-2">
               {p.n}
             </div>
@@ -67,9 +57,6 @@ export function Projects() {
                 {p.stack.join(" / ")}
               </span>
             </p>
-            <div className="md:col-span-2 flex md:justify-end items-start">
-              <ArrowUpRight className="w-6 h-6 text-muted-foreground group-hover:text-foreground group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform" />
-            </div>
           </motion.article>
         ))}
       </div>
