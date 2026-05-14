@@ -1,65 +1,11 @@
-@import "tailwindcss" source(none);
-@source "../src";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * Design tokens: :root / .dark define CSS custom properties (oklch).
+ * Tailwind theme maps semantic colors in tailwind.config.js.
  */
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
 
 :root {
   --radius: 0.75rem;
@@ -139,7 +85,7 @@
 
 @layer base {
   * {
-    border-color: var(--color-border);
+    @apply border-border;
   }
 
   html {
@@ -149,7 +95,7 @@
   body {
     background: var(--background);
     color: var(--foreground);
-    font-family: 'General Sans', ui-sans-serif, system-ui, sans-serif;
+    font-family: "General Sans", ui-sans-serif, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     letter-spacing: -0.005em;
   }
@@ -162,7 +108,7 @@
 
 @layer utilities {
   .font-serif-display {
-    font-family: 'Clash Display', 'General Sans', ui-sans-serif, system-ui, sans-serif;
+    font-family: "Clash Display", "General Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
     font-style: normal;
@@ -173,7 +119,7 @@
     font-style: normal;
   }
   .font-mono {
-    font-family: 'General Sans', ui-sans-serif, system-ui, sans-serif;
+    font-family: "General Sans", ui-sans-serif, system-ui, sans-serif;
     font-weight: 500;
     letter-spacing: 0.02em;
   }

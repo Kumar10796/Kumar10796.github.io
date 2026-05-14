@@ -1,8 +1,13 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import path from "node:path";
+import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  tanstackStart: {
-    server: { entry: "server" },
-    base: "/",
+  plugins: [react()],
+  base: "/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 });
